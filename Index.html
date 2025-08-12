@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember:wght@400;500;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Top navbar -->
+  <header class="nav">
+    <a class="nav__logo" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"/>
+    </a>
+
+    <div class="nav__location">
+      <span class="nav__small">Deliver to</span>
+      <span class="nav__bold">Select your address</span>
+    </div>
+
+    <form class="nav__search" role="search">
+      <select aria-label="Search category" class="nav__search-cat">
+        <option selected>All</option>
+        <option>Deals</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Books</option>
+      </select>
+      <input aria-label="Search Amazon" class="nav__search-input" type="search" placeholder="Search Amazon"/>
+      <button class="nav__search-btn" aria-label="Search">
+        🔍
+      </button>
+    </form>
+
+    <div class="nav__lang" role="button" tabindex="0" aria-label="Language">
+      🌐 EN
+    </div>
+
+    <div class="nav__account" role="button" tabindex="0">
+      <span class="nav__small">Hello, sign in</span>
+      <span class="nav__bold">Account & Lists ▾</span>
+      <div class="nav__dropdown" aria-hidden="true">
+        <a href="#">Sign In</a>
+        <a href="#">Create Account</a>
+        <hr/>
+        <a href="#">Your Orders</a>
+        <a href="#">Your Wishlist</a>
+      </div>
+    </div>
+
+    <div class="nav__orders" role="button" tabindex="0">
+      <span class="nav__small">Returns</span>
+      <span class="nav__bold">& Orders</span>
+    </div>
+
+    <a class="nav__cart" href="#" aria-label="Cart">
+      🛒 <span class="nav__cart-count" id="cartCount">0</span>
+      <span class="nav__bold">Cart</span>
+    </a>
+  </header>
+
+  <!-- Bottom panel -->
+  <nav class="panel">
+    <button class="panel__menu" aria-label="Open menu">☰ All</button>
+    <a href="#">Today's Deals</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Registry</a>
+    <a href="#">Gift Cards</a>
+    <a href="#">Sell</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__msg">
+        You are on the demo Amazon clone. Shop great deals and discover new products.
+        <a href="#">Click here</a> to learn more.
+      </div>
+    </div>
+  </section>
+
+  <!-- Product grid -->
+  <main class="grid">
+    <!-- Card -->
+    <article class="card">
+      <h3>Gaming accessories</h3>
+      <div class="card__grid">
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/51o6K3fF1-L._AC_SY200_.jpg" alt="Headsets"/>
+          <span>Headsets</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/61O0rXhhP1L._AC_SY200_.jpg" alt="Keyboards"/>
+          <span>Keyboards</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/61mhb1q0wZL._AC_SY200_.jpg" alt="Mice"/>
+          <span>Mice</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/61jovjd+f9L._AC_SY200_.jpg" alt="Chairs"/>
+          <span>Chairs</span>
+        </a>
+      </div>
+      <a class="card__link" href="#">See more</a>
+    </article>
+
+    <article class="card">
+      <h3>Shop deals in Fashion</h3>
+      <div class="card__grid">
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/61Wl1S1kFZL._AC_SY200_.jpg" alt="Jeans"/>
+          <span>Jeans</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/61pXpQ2XgXL._AC_SY200_.jpg" alt="Tops"/>
+          <span>Tops</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/71V1a8YQ2aL._AC_SY200_.jpg" alt="Shoes"/>
+          <span>Shoes</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/71Z4cBv7f0L._AC_SY200_.jpg" alt="Watches"/>
+          <span>Watches</span>
+        </a>
+      </div>
+      <a class="card__link" href="#">See more</a>
+    </article>
+
+    <article class="card">
+      <h3>Refresh your space</h3>
+      <div class="card__grid">
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/81YxXo7zPJL._AC_SY200_.jpg" alt="Dining"/>
+          <span>Dining</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/71PydC6WJ3L._AC_SY200_.jpg" alt="Home"/>
+          <span>Home</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/81j6b0a1uJL._AC_SY200_.jpg" alt="Kitchen"/>
+          <span>Kitchen</span>
+        </a>
+        <a href="#" class="card__item">
+          <img src="https://m.media-amazon.com/images/I/71w5tQp0J0L._AC_SY200_.jpg" alt="Health & Beauty"/>
+          <span>Health & Beauty</span>
+        </a>
+      </div>
+      <a class="card__link" href="#">See more</a>
+    </article>
+
+    <article class="card card--tall">
+      <h3>Sign in for your best experience</h3>
+      <button class="btn btn--primary" id="signInBtn">Sign in securely</button>
+      <img class="ad" src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" alt="Ad banner"/>
+    </article>
+  </main>
+
+  <!-- Carousel (simple) -->
+  <section class="carousel" aria-label="Deals carousel">
+    <h2>Popular items this season</h2>
+    <div class="carousel__viewport" id="carouselViewport">
+      <div class="carousel__track">
+        <img src="https://m.media-amazon.com/images/I/71k9LB3RT7L._AC_SY200_.jpg" alt="Item 1"/>
+        <img src="https://m.media-amazon.com/images/I/61kT8GMD3pL._AC_SY200_.jpg" alt="Item 2"/>
+        <img src="https://m.media-amazon.com/images/I/71CfS4n3iPL._AC_SY200_.jpg" alt="Item 3"/>
+        <img src="https://m.media-amazon.com/images/I/71oVd+3-3vL._AC_SY200_.jpg" alt="Item 4"/>
+        <img src="https://m.media-amazon.com/images/I/71S3o8vZ4lL._AC_SY200_.jpg" alt="Item 5"/>
+        <img src="https://m.media-amazon.com/images/I/71f5Eu5lJvL._AC_SY200_.jpg" alt="Item 6"/>
+      </div>
+    </div>
+    <button class="carousel__btn prev" aria-label="Previous" id="prevBtn">‹</button>
+    <button class="carousel__btn next" aria-label="Next" id="nextBtn">›</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#" class="footer__back">Back to top</a>
+    <div class="footer__links">
+      <div>
+        <h4>Get to Know Us</h4>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+        <a href="#">About</a>
+      </div>
+      <div>
+        <h4>Make Money</h4>
+        <a href="#">Sell on Amazon</a>
+        <a href="#">Affiliate Program</a>
+        <a href="#">Advertise</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">COVID-19</a>
+        <a href="#">Your Account</a>
+        <a href="#">Returns Centre</a>
+      </div>
+    </div>
+    <div class="footer__copy">
+      © 2025 Amazon Clone Demo. Images/logos belong to their respective owners. For educational use only.
+    </div>
+  </footer>
+</body>
+</html>
